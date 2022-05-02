@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: #6ecedb;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  overflow: hidden;
+}
+#desk {
+  position: relative;
+  grid-column: auto/6;
+  margin: auto 0;
+}
+.deskBg {
+  position: relative;
+}
+.deskBg__header {
+}
+.deskBg__headerTop {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 275.33px;
+  height: 53px;
+  background: #d0f4ef;
+  box-shadow: inset -4px 4px 0px #85f2e2, inset 4px 4px 0px #85f2e2;
+  border-radius: 20px;
+  user-select: none;
+}
+.deskBg__headerTop::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 34px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d0f4ef;
+}
+.deskBg__headerTitle {
+  margin: auto;
+  font-family: sitkaJs;
+  font-size: 27px;
+  color: #3f736b;
+  text-shadow: 1px 2px 4px #7dc9f9;
+}
+.deskBg__headerBelow {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 287px;
+  height: 59px;
+  background: #d0f4ef;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.deskBg__body {
+  width: 473px;
+  height: 535px;
+  background-color: #d0f4ef;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), inset -8px 8px 0px #d0f4ef, inset 8px -8px 0px #d0f4ef, inset -8px -8px 0px #d0f4ef, inset 8px 8px 0px #d0f4ef, inset -12px 12px 0px #85f2e2, inset 12px -12px 0px #85f2e2, inset -12px -12px 0px #85f2e2, inset 12px 12px 0px #85f2e2;
+}
+.deskContent {
+  position: absolute;
+  /* top: 50%; */
+  top: 31px;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
+  width: 449px;
+  /* height: 473px; */
+  max-height: 473px;
+  border-radius: 20px;
+  overflow: scroll;
+  /* background: rgba(0, 0, 0, 0.227); */
+  /* opacity: 0.5; */
+}
+.deskContent::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.deskContent__items {
+}
+.deskContent__item {
+  cursor: text;
+  width: 100%;
+  min-height: 47.3px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.deskContent__item + .deskContent__item {
+  border-top: 1px solid #85f2e2;
+}
+.deskContent__item:hover,
+.deskContent__item:focus-within {
+  background: #c5ede7;
+}
+.deskContent__itemName {
+  width: 390px;
+  font-family: sitkaJs;
+  font-size: 20px;
+  padding: 17px;
+  padding-right: 0;
+  color: rgba(63, 115, 107, 0.3);
+  background: transparent;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease;
+}
+.deskContent__item:hover .deskContent__itemName,
+.deskContent__item:focus-within .deskContent__itemName {
+  color: #3f736b;
+}
+.deskContent__delete {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  /* padding: 16px; */
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  /* border-radius: 20px; */
+}
+.deskContent__delete:hover {
+  background-color: #3f736b;
+}
+#plusBtn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  left: 538px;
+  top: 636px;
+  background: #d0f4ef;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25), inset 4px 8px 8px rgba(255, 255, 255, 0.6);
+  border-radius: 23.5px;
+  transition: all 0.2s ease;
+}
+#plusBtn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+#wheel {
+  position: relative;
+  grid-column: 6;
+  width: 600px;
+  /* height: 794px; */
+  /* background: #a8e7de; */
+  border-radius: 50%;
+  margin: auto 0;
+  /* overflow: hidden; */
+}
+#canvasBox {
+  max-width: 100%;
+}
+
+#resultArrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 100%;
+  transform: translate(-20%, -50%);
+  width: 10%;
+  /* filter: hue-rotate(10deg); */
+  /* animation: resultArrow 0.07s ease-in alternate-reverse infinite; */
+}
+@keyframes resultArrow {
+  from {
+    transform: translate(-20%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-20%, -50%) rotate(-10deg);
+  }
+}

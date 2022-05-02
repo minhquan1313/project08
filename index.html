@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Wheel</title>
+        <!-- <link rel="stylesheet" href="./res/style.css" /> -->
+        <link rel="stylesheet" href="./res/style.min.css" />
+    </head>
+    <body>
+        <!-- <div id="output"></div> -->
+        <div id="main">
+            <div id="desk">
+                <div class="deskBg__headerBelow"></div>
+                <div class="deskBg">
+                    <div class="deskBg__header">
+                        <div class="deskBg__headerTop">
+                            <p class="deskBg__headerTitle">Names go here</p>
+                        </div>
+                    </div>
+
+                    <div class="deskBg__body"></div>
+                </div>
+
+                <div class="deskContent">
+                    <ul class="deskContent__items">
+                        <li class="deskContent__item">
+                            <p class="deskContent__itemName">Lorem, ipsum.</p>
+                            <div class="deskContent__delete">
+                                <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.2715 6.71102H2.83685C2.66987 6.69683 2.5044 6.75201 2.37928 6.86352C2.25627 6.9817 2.19928 7.15276 2.22678 7.32109L3.81293 21.139C3.99895 22.6625 5.29801 23.8042 6.83273 23.7928H14.5195C16.0975 23.8153 17.4266 22.619 17.5699 21.0476L18.8815 7.26008C18.8896 7.11219 18.8341 6.96786 18.729 6.86352C18.6039 6.75201 18.4385 6.69683 18.2715 6.71102ZM16.3498 20.9865C16.2539 21.9154 15.4527 22.6098 14.5196 22.5727H6.83279C5.91649 22.6099 5.12887 21.9291 5.03306 21.017L3.50793 7.93116H17.6004L16.3498 20.9865Z"
+                                        fill="#6ECEDB"
+                                    />
+                                    <path
+                                        d="M20.4982 2.74563H14.2145V1.76949C14.2484 0.826682 13.5116 0.0349793 12.5687 0.00111588C12.5378 6.55735e-06 12.5068 -0.000285368 12.4759 0.000298483H8.63242C7.68915 -0.0171587 6.91041 0.733324 6.89295 1.67659C6.89237 1.70754 6.89266 1.73854 6.89377 1.76949V2.74557H0.610067C0.273126 2.74557 0 3.01869 0 3.35563C0 3.69258 0.273126 3.9657 0.610067 3.9657H20.4982C20.8352 3.9657 21.1083 3.69258 21.1083 3.35563C21.1083 3.01869 20.8351 2.74563 20.4982 2.74563ZM12.9944 1.76949V2.74557H8.11384V1.76949C8.07945 1.50214 8.26833 1.25756 8.53568 1.22318C8.56773 1.21903 8.60013 1.21815 8.63236 1.22043H12.4758C12.7447 1.2014 12.9781 1.40388 12.9971 1.6728C12.9995 1.70503 12.9985 1.73743 12.9944 1.76949Z"
+                                        fill="#6ECEDB"
+                                    />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="deskContent__item">
+                            <p class="deskContent__itemName">Lorem, ipsum.</p>
+                            <div class="deskContent__delete">
+                                <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.2715 6.71102H2.83685C2.66987 6.69683 2.5044 6.75201 2.37928 6.86352C2.25627 6.9817 2.19928 7.15276 2.22678 7.32109L3.81293 21.139C3.99895 22.6625 5.29801 23.8042 6.83273 23.7928H14.5195C16.0975 23.8153 17.4266 22.619 17.5699 21.0476L18.8815 7.26008C18.8896 7.11219 18.8341 6.96786 18.729 6.86352C18.6039 6.75201 18.4385 6.69683 18.2715 6.71102ZM16.3498 20.9865C16.2539 21.9154 15.4527 22.6098 14.5196 22.5727H6.83279C5.91649 22.6099 5.12887 21.9291 5.03306 21.017L3.50793 7.93116H17.6004L16.3498 20.9865Z"
+                                        fill="#6ECEDB"
+                                    />
+                                    <path
+                                        d="M20.4982 2.74563H14.2145V1.76949C14.2484 0.826682 13.5116 0.0349793 12.5687 0.00111588C12.5378 6.55735e-06 12.5068 -0.000285368 12.4759 0.000298483H8.63242C7.68915 -0.0171587 6.91041 0.733324 6.89295 1.67659C6.89237 1.70754 6.89266 1.73854 6.89377 1.76949V2.74557H0.610067C0.273126 2.74557 0 3.01869 0 3.35563C0 3.69258 0.273126 3.9657 0.610067 3.9657H20.4982C20.8352 3.9657 21.1083 3.69258 21.1083 3.35563C21.1083 3.01869 20.8351 2.74563 20.4982 2.74563ZM12.9944 1.76949V2.74557H8.11384V1.76949C8.07945 1.50214 8.26833 1.25756 8.53568 1.22318C8.56773 1.21903 8.60013 1.21815 8.63236 1.22043H12.4758C12.7447 1.2014 12.9781 1.40388 12.9971 1.6728C12.9995 1.70503 12.9985 1.73743 12.9944 1.76949Z"
+                                        fill="#6ECEDB"
+                                    />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="plusBtn">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14 0C6.26667 0 0 6.26667 0 14C0 21.7333 6.26667 28 14 28C21.7333 28 28 21.7333 28 14C28 6.26667 21.7333 0 14 0ZM14 26C7.36667 26 2 20.6333 2 14C2 7.36667 7.36667 2 14 2C20.6333 2 26 7.36667 26 14C26 20.6333 20.6333 26 14 26Z"
+                        fill="url(#paint0_linear)"
+                    />
+                    <path
+                        d="M19.6667 13H15V8.33333C15 7.76666 14.5667 7.33333 14 7.33333C13.4333 7.33333 13 7.76666 13 8.33333V13H8.33334C7.76668 13 7.33334 13.4333 7.33334 14C7.33334 14.5667 7.76668 15 8.33334 15H13V19.6667C13 20.2333 13.4333 20.6667 14 20.6667C14.5667 20.6667 15 20.2333 15 19.6667V15H19.6667C20.2333 15 20.6667 14.5667 20.6667 14C20.6667 13.4333 20.2333 13 19.6667 13Z"
+                        fill="url(#paint1_linear)"
+                    />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="14" y1="0.1111" x2="14" y2="28.4551" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00EFD1" />
+                            <stop offset="1" stop-color="#00ACEA" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="14" y1="0.111095" x2="14" y2="28.4551" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00EFD1" />
+                            <stop offset="1" stop-color="#00ACEA" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div id="wheel">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Arrow_west.svg/800px-Arrow_west.svg.png" alt="" id="resultArrow" />
+                <canvas id="canvasBox"></canvas>
+            </div>
+        </div>
+
+        <!-- <script src="./res/app.js"></script> -->
+        <script src="./res/app.min.js"></script>
+    </body>
+</html>
